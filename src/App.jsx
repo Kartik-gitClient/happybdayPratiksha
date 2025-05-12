@@ -1,8 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import p1 from "./assets/p1.jpg";
-import p2 from "./assets/p2.jpg";
-import p3 from "./assets/p3.jpg";
+
 import sakura from "./assets/sakura.jpg";
 import video from "./assets/p4.mp4";
 import song from "./assets/song.mp3";
@@ -76,27 +74,28 @@ function App() {
         className="text-center max-w-md"
       >
         <h1 className="text-4xl font-bold text-white mb-3 drop-shadow-md">
-          Happy Birthday, PRATIKSHA 🌸🌸
+          Happy Birthday, PRATIKSHA🌸🌸
         </h1>
         <p className="text-pink-200 text-base font-medium">
           Wishing you a day as magical as sakura petals in the sunset 💗
+          I REMOVED PHOTOS AND VIDEOS CAUSE OF PRIVACY REASONS
         </p>
       </motion.div>
 
       {/* Cards */}
       <div className="flex flex-col items-center space-y-8 w-full">
         <Card
-          img={p1}
+          img={sakura}
           quote="Your smile is like Wi-Fi. Instant connection, pure magic. You're basically the sun, but cooler. 🌞"
           onHoverStart={handleHoverStart}  // Start playing the song when hover starts
         />
         <Card
-          img={p2}
+          img={sakura}
           quote="Not to be dramatic, but the world looks 1000% better with you in it. You're basically 💖"
           onHoverStart={handleHoverStart}
         />
         <Card
-          img={p3}
+          img={sakura}
           quote="You’re the secret ingredient that turns 'okok' days into ‘woow’ days. Beauty in the most unexpected places. ✨"
           onHoverStart={handleHoverStart}
         />
